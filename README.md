@@ -1,6 +1,6 @@
 # Ruby Helpers
 
-Small collection of useful helpers
+Small snippits of questionably useful helpers
 
 ### Instance method composition
 
@@ -21,4 +21,9 @@ result = ['example.com', 'www.example.com'].collect(&M.split('.'))
 result == [['example', 'com'], ['www', 'example', 'com']]
 ```
 
+### Mixin fixer
 
+Ruby libraries have a nasty tendency to use mixins instead of composition
+This provides a mechanism to convert mixins to a class/instance variable for composition
+
+See: https://8thlight.com/blog/eric-meyer/2012/11/16/composition-over-mixins.html
